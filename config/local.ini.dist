@@ -1,0 +1,7 @@
+[database]
+driv = 'pdo_mysql'
+host = 'localhost'
+port = '8080'
+user = 'root'
+pass = 'root'
+name = 'world'
