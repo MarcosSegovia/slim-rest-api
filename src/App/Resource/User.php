@@ -61,7 +61,7 @@ class User extends Resource
     /**
      * Update user
      */
-    /*public function put($id)
+    public function put($id = null)
     {
         $email = $this->getSlim()->request()->params('email');
         $password = $this->getSlim()->request()->params('password');
@@ -79,12 +79,12 @@ class User extends Resource
         }
 
         self::response(self::STATUS_NO_CONTENT);
-    }*/
+    }
 
     /**
      * @param $id
      */
-   /* public function delete($id)
+    public function delete($id = null)
     {
         $status = $this->getUserService()->deleteUser($id);
 
@@ -94,7 +94,7 @@ class User extends Resource
         }
 
         self::response(self::STATUS_OK);
-    }*/
+    }
 
     /**
      * Show options in header

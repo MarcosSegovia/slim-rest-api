@@ -184,5 +184,7 @@ abstract class Resource
         );
 
         $this->entityManager = EntityManager::create($connectionOptions, $config);
+        $conn =  $this->entityManager->getConnection();
+        $conn->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
     }
 }
